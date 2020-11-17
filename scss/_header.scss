@@ -1,32 +1,21 @@
 .header {
     height: 60px;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 0 0 2px black;
     z-index: 1;
     &__title {
-        color: #70a076;
-        display: grid;
-        justify-items: left;
-        align-content: center;
         padding-left: 30px;
-    }
-    &__bars {
-        display: grid;
-        justify-items: center;
-        align-content: center;
-    }
-    &__title {
-        font-size: 32px;
-        flex-basis: 80%;
+        font-size: 30px;
         letter-spacing: 1px;
     }
     &__bars {
-        flex-basis: 20%;
+        padding-right: 30px;
     }
     &__icon {
         height: 30px;
         width: 30px;
-        // filter: invert(80%) sepia(100%) saturate(0%) hue-rotate(5deg)
-        //     brightness(111%) contrast(101%); // white svg color
     }
 }

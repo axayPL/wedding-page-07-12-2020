@@ -7,9 +7,11 @@
     background-size: cover;
     background-attachment: fixed;
     color: black;
+    // Dekoracyjny styl
     font-family: "Alex Brush", cursive;
     text-align: center;
     text-shadow: 0 0 3px 2px black;
+
     &__text-box {
         width: 100vw;
         position: absolute;
@@ -23,10 +25,22 @@
         padding: 0 15px;
     }
     &__title {
-        font-size: 38px;
+        &-her-name {
+            display: inline;
+            font-size: 36px;
+        }
+        &-separator {
+            text-align: center;
+            padding: 0 10px;
+            font-size: 28px;
+        }
+        &-his-name {
+            display: inline;
+            font-size: 36px;
+        }
     }
     &__text {
-        font-size: 30px;
+        font-size: 20px;
     }
     &__img {
         font-size: 38px;
