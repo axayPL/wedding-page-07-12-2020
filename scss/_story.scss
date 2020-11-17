@@ -23,11 +23,16 @@
             width: 1px;
             top: 0;
             left: 18px;
-            background-color: black;
+            background-color: #ddd;
         }
         &--first {
             &::after {
                 top: 35px;
+            }
+        }
+        &--last {
+            &::after {
+                height: 35px;
             }
         }
     }
@@ -44,9 +49,38 @@
             height: 16px;
             width: 16px;
             left: 0;
-            background-color: black;
+            background-color: #ccc;
             border-radius: 50%;
             z-index: 1;
         }
+    }
+
+    &__item-img {
+        margin: 0 auto;
+        // pamietac zeby dac media ze zmiana wielkosci zdjecia
+        width: 250px;
+        height: 250px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        &--bieszczady {
+            background-image: url(../img/bieszczady-1.jpg);
+        }
+        &--opole {
+            background-image: url(../img/opole-1.jpg);
+        }
+        &--travel {
+            background-image: url(../img/travel-0.jpg);
+        }
+        &--jerusalem {
+            background-image: url(../img/main-image-1.jpg);
+        }
+        &--wedding {
+            background-image: url(../img/wedding-0.jpg);
+        }
+    }
+    &__item-text {
+        font-size: 14px;
+        padding: 10px;
     }
 }
