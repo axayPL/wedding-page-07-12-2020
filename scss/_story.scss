@@ -1,0 +1,52 @@
+.story {
+    overflow: hidden;
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    &__container {
+        display: grid;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    &__item {
+        position: relative;
+        padding: 25px 10px;
+        text-align: center;
+        min-height: 200px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 1px;
+            top: 0;
+            left: 18px;
+            background-color: black;
+        }
+        &--first {
+            &::after {
+                top: 35px;
+            }
+        }
+    }
+
+    &__item-title {
+        letter-spacing: 1px;
+        position: relative;
+        font-size: 20px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            height: 16px;
+            width: 16px;
+            left: 0;
+            background-color: black;
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+}
