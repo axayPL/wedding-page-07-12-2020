@@ -1,40 +1,41 @@
 .main-page {
-    font-family: "Alex Brush", cursive;
+    position: relative;
     height: calc(100vh - 50px);
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
     background-image: url(../img/paper-flower-main-page_1280.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: black;
+    font-family: "Alex Brush", cursive;
+    text-align: center;
     text-shadow: 0 0 3px 2px black;
-    &__title {
-        font-size: 38px;
-    }
-    &__image {
-        font-size: 38px;
-        &--top {
-            align-self: flex-end;
-        }
-        &--bottom {
-            align-self: flex-start;
-        }
+    &__text-box {
+        width: 100vw;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     &__title,
     &__text {
         letter-spacing: 1px;
         padding: 0 15px;
     }
-
+    &__title {
+        font-size: 38px;
+    }
     &__text {
         font-size: 30px;
-        align-self: flex-start;
     }
-    &__title {
-        align-self: flex-end;
+    &__img {
+        font-size: 38px;
+        filter: invert(1);
+        &--top {
+            margin-bottom: 15px;
+        }
+        &--bottom {
+            margin-top: 15px;
+        }
     }
 }
