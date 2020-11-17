@@ -1,0 +1,86 @@
+.story {
+    overflow: hidden;
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    &__container {
+        display: grid;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    &__item {
+        position: relative;
+        padding: 25px 10px;
+        text-align: center;
+        min-height: 200px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 1px;
+            top: 0;
+            left: 18px;
+            background-color: #ddd;
+        }
+        &--first {
+            &::after {
+                top: 35px;
+            }
+        }
+        &--last {
+            &::after {
+                height: 35px;
+            }
+        }
+    }
+
+    &__item-title {
+        letter-spacing: 1px;
+        position: relative;
+        font-size: 20px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            height: 16px;
+            width: 16px;
+            left: 0;
+            background-color: #ccc;
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+    &__item-img {
+        margin: 0 auto;
+        // pamietac zeby dac media ze zmiana wielkosci zdjecia
+        width: 250px;
+        height: 250px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        &--bieszczady {
+            background-image: url(../img/bieszczady-1.jpg);
+        }
+        &--opole {
+            background-image: url(../img/opole-1.jpg);
+        }
+        &--travel {
+            background-image: url(../img/travel-0.jpg);
+        }
+        &--jerusalem {
+            background-image: url(../img/main-image-1.jpg);
+        }
+        &--wedding {
+            background-image: url(../img/wedding-0.jpg);
+        }
+    }
+    &__item-text {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

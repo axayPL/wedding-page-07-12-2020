@@ -1,5 +1,11 @@
-@import "_main-styles.scss";
-@import "_header.scss";
-@import "_main-page.scss";
-@import "_gallery.scss";
-@import "_helpful-information";
+@import "variables";
+@import "mixins";
+
+@import "main-styles";
+@import "header";
+@import "main-page";
+@import "date-section";
+@import "newlyweds";
+@import "gallery";
+@import "helpful-information";
+@import "story";
