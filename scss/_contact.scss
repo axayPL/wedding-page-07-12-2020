@@ -1,0 +1,27 @@
+.contact {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    &__he,
+    &__she {
+        font-size: 16px;
+    }
+}
+
+.contact-panel {
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__submit-btn {
+        padding: 5px 30px;
+        background-color: cadetblue;
+        border: none;
+        margin-top: 10px;
+        min-width: 50%;
+    }
+}
